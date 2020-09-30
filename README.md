@@ -16,10 +16,10 @@ matT(A,B)
 二次元配列A,Bの掛け算をリターン。  
 AとBは同じサイズの正方行列
 
-# Require
-math
-numpy
-matplotlib
-random
-io
-PIL
+# Require  
+math  
+numpy  
+matplotlib  
+random  
+io  
+PIL  
