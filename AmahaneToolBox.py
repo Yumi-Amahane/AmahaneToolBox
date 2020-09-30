@@ -16,14 +16,6 @@ def matT(A,B):
         R.append(RD)
     return(R)
 
-def matPow(A,n):
-    M=scipy.linalg.eig(A)
-    R=scipy.linalg.eig(A)[1]
-    for i in range(len(M[0])):
-        for j in range(len(M[0])):
-            R[i][j]*=M[0][j]**n
-    return(matT(R,np.linalg.inv(scipy.linalg.eig(A)[1])))
-    
 from io import BytesIO
 from PIL import Image
 def PR_Phasor(Re,Im="None",point="P",Colo="blue"):
