@@ -2,8 +2,6 @@ import numpy as np
 import matplotlib.pyplot as plt
 import math
 
-import random
-
 def matT(A,B):
     R=[]
     for x in (range(len(A))):
@@ -55,14 +53,13 @@ def PR_Phasor(Re,Im="None",point="P",Colo="blue"):
     fig.savefig(buf,bbox_inches='tight',pad_inchas=0.0)
     return Image.open(buf)
     
-def Shuffle(L):
+    
+import random
+def Shuffle(List):
+    N=len(List)
     R=[]
-    Res=[]
-    for i in range(len(L)):
-        k=random.randint(0,len(L)-1)
-        while k in Res:
-            k=random.randint(0,len(L)-1)
-            
-        Res.append(k)
-        R.append(L[k])
+    for i in range(N):
+        D=random.randint(0,len(List)-1)
+        R.append(List.pop(D))
+        #print(len(List))
     return(R)
