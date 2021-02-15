@@ -1,5 +1,5 @@
 # AmahaneToolBox  
-ツールボックス。欲しい機能が見当たらなかったらつくったもの集です  
+ツールボックス。自分が使いやすいようにつくったもの集です  
 pip install git+https://github.com/Yumi-Amahane/AmahaneToolBox  
   
 matplotlibでフェーザ表示(複素平面表示)する  
